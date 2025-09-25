@@ -1,4 +1,12 @@
 import streamlit as st
+
+# Wis alle cached data en functies
+st.cache_data.clear()
+st.cache_resource.clear()
+
+
+
+import streamlit as st
 import pandas as pd
 import geopandas as gpd
 import numpy as np
@@ -62,6 +70,7 @@ with st.container(border = True):
     st.write('Databronnen:')
     st.page_link("https://www.rivm.nl/gezondheidsmonitors/jongvolwassenen", label="Gezondheidsmonitor Jongvolwassene (2024)", icon="🌎")
     st.page_link("https://data.opendatasoft.com/explore/dataset/georef-netherlands-gemeente%40public/export/?disjunctive.prov_code&disjunctive.prov_name&disjunctive.gem_code&disjunctive.gem_name", label="Nederland Gemeente Dataset (GeoJSON)", icon="🌎")
+
 
 
 
